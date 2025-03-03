@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "NILG.AI Helper",
+  "version": "1.0",
+  "description": "Analisa o site atual e sugere como a NILG.AI pode ajudar.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  }
+}
